@@ -1,5 +1,6 @@
 /*
-
+Name: Buyondo Emmanuel
+Reg NO: 24/U/BIO/04517/PD
 Library Book Management System
 TEMB 1202 Computing II — Group A Evening
 
