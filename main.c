@@ -1,11 +1,12 @@
 /*
-* Library Book Management System
-* TEMB 1202 Computing II — Group A Evening
+
+Library Book Management System
+TEMB 1202 Computing II — Group A Evening
 
 */
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <stdio.h> //standard input and output
+#include <stdlib.h> //
+#include <string.h> //for managing strings
 
 /* Constants */
 #define MAX_BOOKS 100
@@ -81,7 +82,7 @@ case 8: generateReport(); break;
 case 9: registerMember(); break;
 case 10: payFine(); break;
 case 0: printf("Goodbye!\n"); break;
-default: printf("[!] Invalid option.\n");
+default: printf("[!] Invalid option. Pick something valid\n");
 }
 } while (choice != 0);
 return 0;
@@ -115,9 +116,9 @@ return 0;
 //display main menu
 
 void displayMenu() {
-printf("\n============================================\n");
+printf("\n.............................................\n");
 printf(" MAIN MENU \n");
-printf("============================================\n");
+printf("...............................................\n");
 printf(" 1. Add Book\n");
 printf(" 2. Search Book\n");
 printf(" 3. Update Book\n");
