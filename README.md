@@ -10,7 +10,7 @@ This project is a complete, menu-driven C console application designed to automa
 * **Institution:** Kyambogo University
 * **Department:** Biomedical and Mechatronics Engineering
 * **Implementation Language:** C (ISO C99 standard)
-* **Project Files:** `library.c` (Source Code) 
+* **Project Files:** `main.c` (Source Code) 
 
 ---
 
