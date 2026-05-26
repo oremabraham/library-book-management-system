@@ -1,0 +1,640 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+]{article}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\ifLuaTeX
+  \usepackage{luacolor}
+  \usepackage[soul]{lua-ul}
+\else
+  \usepackage{soul}
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{quote}
+KYAMBOGO
+\includegraphics[width=1.24653in,height=0.97902in]{./media/image1.png}UNIVERSITY
+
+FACULTY OF ENGINEERING
+
+BACHELOR OF ENGINEERING IN BIOMEDICAL AND MECHATRONICS ENGINEERING
+
+YEAR ONE: SEMESTER TWO
+
+TEMB 1202: COMPUTING II
+
+TITLE: LIBRARY BOOK MANAGEMENT SYSTEM USING C PROGRAMMING
+
+DATE: 26\textsuperscript{TH} MAY, 2026
+
+GROUP ONE EVENING
+
+\textbf{\ul{MEMBERS}}
+\end{quote}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.3283}}
+  >{\centering\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4168}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+\textbf{NAMES}
+\end{quote}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\begin{quote}
+\textbf{REGISTRATION NUMBER}
+\end{quote}
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+OREM ABRAHAM
+\end{quote}
+\end{minipage} & \begin{minipage}[t]{\linewidth}\centering
+\begin{quote}
+25/U/BIE/01415/PE
+\end{quote}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+JUUKO MORRIS
+\end{quote}
+\end{minipage} & \begin{minipage}[t]{\linewidth}\centering
+\begin{quote}
+25/U/BIE/01375/PE
+\end{quote}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+OKOT CLEMENT
+\end{quote}
+\end{minipage} & \begin{minipage}[t]{\linewidth}\centering
+\begin{quote}
+25/U/BIE/05306/PE
+\end{quote}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+SANYU DORCUS
+\end{quote}
+\end{minipage} & \begin{minipage}[t]{\linewidth}\centering
+\begin{quote}
+25/U/BIE/01420/PE
+\end{quote}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+EDYABI BRIAN
+\end{quote}
+\end{minipage} & \begin{minipage}[t]{\linewidth}\centering
+\begin{quote}
+25/U/BIE/05291/PE
+\end{quote}
+\end{minipage} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+BUYONDO EMMANUEL
+\end{quote}
+\end{minipage} & \begin{minipage}[t]{\linewidth}\centering
+\begin{quote}
+25/U/BIO/04517/PE
+\end{quote}
+\end{minipage} \\
+\end{longtable}
+}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Introduction}
+\end{enumerate}
+
+This report documents the design and implementation of a Library Book
+Management System, developed as part of the TEMB 1202 Computing II group
+assignment. Written entirely in the C programming language, the system
+provides a full-featured, menu-driven console application for managing a
+library\textquotesingle s book inventory, borrowing workflow, fine
+collection, and reporting. Libraries are vital knowledge hubs, and
+effective management of their resources directly impacts user
+satisfaction and institutional efficiency. Manual record-keeping leads
+to lost books, uncollected fines, and inaccurate availability
+information. This system automates these processes using structured C
+programming techniques structs, arrays, functions, and conditional logic
+to enforce library policies consistently.
+
+Scope: The system manages up to 100 book records and 50 borrower
+records, enforces five business rules, tracks borrow counts to flag
+high-demand books, calculates late-return fines, blocks borrowing for
+members with unpaid fines, and generates a comprehensive library summary
+report identifying the most-borrowed book.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  \textbf{The problem being solved}
+\end{enumerate}
+
+University and community libraries need a reliable, automated system to
+track book availability, manage borrower records, enforce borrowing
+policies, and calculate fines for late returns. The assignment requires
+a C program that addresses all these needs while applying a set of
+clearly defined business rules.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  Objectives
+\end{enumerate}
+
+\begin{itemize}
+\item
+  Allow authorised librarians to add new book records with full
+  bibliographic details.
+\item
+  Enable searching for books by ID, title, or author.
+\item
+  Support updating book details and deleting records.
+\item
+  Process borrow transactions, enforcing availability and fine-status
+  rules.
+\item
+  Process return transactions, calculating and recording fines for late
+  returns.
+\item
+  Prevent borrowing when a member has unpaid outstanding fines.
+\item
+  Flag books that have been borrowed many times as high-demand.
+\item
+  Generate a summary report showing borrow counts, fines collected, and
+  most-borrowed book.
+\item
+  Track total borrowed books and available copies in real time.
+\item
+  Require authentication before system access.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  \textbf{System features}
+\end{enumerate}
+
+The system provides eight operations accessible through a main menu,
+organised into six functional modules. Each module is implemented as one
+or more dedicated C functions.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2556}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2605}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2555}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Feature
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rules applied
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Add Book & Register a new book: title, author, ISBN, genre, copies, year
+& Duplicate ISBN check \\
+Search Book & Find by ID, title keyword, or author name. &
+Case-insensitive match \\
+Update Book & Modify any field of an existing book record. & ID must
+exist \\
+Delete Book & Remove a book record with confirmation. & Cannot delete if
+copies borrowed \\
+Borrow Book & Lend a copy to a member; records due date. & BR-1, BR-2,
+BR-4 enforced \\
+Return Book & Accept a returned copy; compute and record fine if late. &
+BR-3 enforced \\
+Display Books & List all books with availability and demand status &
+BR-5 high-demand flag \\
+Library Report & Aggregate borrow counts, fines, and identify
+most-borrowed book. & Full summary \\
+\end{longtable}
+}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  Book Registration \& Management
+\end{enumerate}
+
+\begin{quote}
+When adding a book the user supplies: a unique numeric ID, ISBN, title,
+author, genre, publication year, and total number of copies. The system
+validates that the ID and ISBN are not duplicates and that all numeric
+values are positive before saving the record. The available-copies count
+is initialised to the total copies value.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\item
+  Search \& Display
+\end{enumerate}
+
+\begin{quote}
+Three search modes are supported: by book ID (exact match), by title
+keyword (substring search), and by author name (substring search). The
+display-all view presents every book with its availability count and
+automatically annotates high-demand books with a visible flag.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{2}
+\item
+  Borrow Books
+\end{enumerate}
+
+\begin{quote}
+A borrow transaction requires a member ID and book ID. The system checks
+copy availability (BR-1/BR-2), verifies the member has no unpaid fines
+(BR-4), records the borrow with a due date 14 days from today,
+decrements available copies, increments the borrow count, and flags the
+book as high-demand if the count exceeds the threshold (BR-5).
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{3}
+\item
+  Return Books \& Fine Calculation
+\end{enumerate}
+
+\begin{quote}
+On return the system computes the number of days overdue. If the book is
+late (BR-3), a fine of 500 UGX per overdue day is calculated and added
+to the member\textquotesingle s outstanding balance. The member cannot
+borrow another book until the fine is cleared (BR-4). Available copies
+are incremented on successful return.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{4}
+\item
+  Library Summary Report
+\end{enumerate}
+
+\begin{quote}
+The report lists all books with their total borrow count and remaining
+copies, prints cumulative statistics (total borrows, total fines
+collected), and identifies the most-borrowed book, giving management an
+at-a-glance view of library performance.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\item
+  \textbf{Program design and structure}
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  Data Structures
+\end{enumerate}
+
+\begin{quote}
+Two structs model the library domain: Book (catalogue record) and Member
+(borrower record). Both are stored in fixed-size arrays.
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{1}
+\item
+  System Architecture
+\end{enumerate}
+
+\begin{quote}
+The program follows a three-layer architecture: UI (menus, formatted
+output), Business Logic (rules, calculations), and Data (struct arrays,
+(Create, Read, Update, Delete) CRUD helpers).
+\end{quote}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2349}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2348}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2348}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Layer
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Responsibility
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Key Functions
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+UI / Menu & Display menus, format tables, collect validated input &
+main(), displayMenu(), printBookTable() \\
+Business logic & Enforce all 5 rules, compute fines, set demand flags &
+borrowBook(), returnBook(),
+
+calculateFine() \\
+Data management & CRUD on Book and Member arrays & addBook(),
+searchBook(), updateBook(), deleteBook( \\
+Reporting & Aggregate statistics, find most-borrowed book &
+generateReport(), findMostBorrowed() \\
+Authentication & Verify librarian credentials at startup &
+authenticate() \\
+\end{longtable}
+}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\setcounter{enumi}{2}
+\item
+  \textbf{Module Breakdown}
+\end{enumerate}
+
+\begin{itemize}
+\item
+  Authentication Module: Simple three-attempt username/password gate.
+  Hardcoded for demo; easily extended to file-based storage.
+\item
+  Book Management Module: addBook(), searchById(), searchByTitle(),
+  searchByAuthor(), updateBook(), deleteProduce(). All operations
+  validate input and provide clear error messages.
+\item
+  Member Management Module: registerMember() collects member details;
+  findMemberById() is used by borrow/return operations.
+\item
+  Borrow Module: borrowBook() enforces BR-1, BR-2, BR-4, BR-5, records
+  the loan, and updates counts and dates.
+\item
+  Return Module: returnBook() computes days overdue, invokes
+  calculateFine(), updates the member\textquotesingle s unpaid balance,
+  and restores copy count.
+\item
+  Reporting Module: generateReport() iterates both arrays, accumulates
+  totals, and calls findMostBorrowed() for the top result.
+\item
+  Utility Module: clearBuffer(), computeDaysDiff(), dateToInt() ---
+  helpers for safe input and date arithmetic.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\item
+  \textbf{Important function used.}
+\end{enumerate}
+
+\begin{itemize}
+\item
+  Authentication: The authenticate() function is called once at startup,
+  granting three attempts before the program exits. Default credentials
+  are admin / lib2026.
+\end{itemize}
+
+\begin{quote}
+\includegraphics[width=6.26806in,height=4.08403in]{./media/image2.png}
+\end{quote}
+
+\begin{itemize}
+\item
+  Book Management --- addBook(): Collects bibliographic fields, checks
+  for duplicate ID/ISBN, then appends the new Book struct.
+  availableCopies is set equal to totalCopies; borrowCount and
+  isHighDemand are initialised to zero.
+\end{itemize}
+
+\begin{quote}
+\includegraphics[width=5.80972in,height=3.89868in]{./media/image3.png}
+\end{quote}
+
+\begin{itemize}
+\item
+  Borrow \& Return Logic
+\end{itemize}
+
+\begin{quote}
+\includegraphics[width=6.26806in,height=5.90903in]{./media/image4.png}
+\end{quote}
+
+\begin{itemize}
+\item
+  Fine Calculation --- returnBook()
+\end{itemize}
+
+\begin{quote}
+\includegraphics[width=5.92431in,height=3.64936in]{./media/image5.png}
+\end{quote}
+
+\begin{itemize}
+\item
+  Reporting --- generateReport()
+\end{itemize}
+
+\begin{quote}
+\includegraphics[width=5.96597in,height=5.86022in]{./media/image6.png}
+\end{quote}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\item
+  \textbf{Design decisions and justifications}
+\end{enumerate}
+
+\begin{itemize}
+\item
+  \textbf{Two-Struct Design}: Separating book data (Book) from borrower
+  data (Member) reflects real library systems and avoids redundant data
+  storage. Each struct is cohesive and independently extensible.
+\item
+  \textbf{One-Book-Per-Member Limit}: A member may only borrow one book
+  at a time in the current implementation. This simplifies the Member
+  struct and prevents complex multi-loan tracking while still meeting
+  all stated assignment requirements. Multiple borrows could be added
+  using a linked list in a future version.
+\item
+  \textbf{Parameterised Constants via \#define}: Fine rate, loan period,
+  and high-demand threshold are all \#define macros. This means
+  institutional policy changes (e.g. changing the loan period from 14 to
+  21 days) require editing a single line rather than hunting through the
+  code.
+\item
+  \textbf{Fine Blocking at Borrow Time (BR-4):} The fine check occurs at
+  the beginning of borrowBook(), before any other processing. This
+  ensures the rule is enforced consistently and the system provides a
+  clear, actionable message telling the member how much they owe.
+\item
+  \textbf{High-Demand Flag (BR-5):} The isHighDemand field is set lazily
+  --- updated each time borrowCount crosses the threshold. This avoids
+  scanning the entire catalogue on every display call and keeps the flag
+  persistently accurate without additional computation.
+\item
+  \textbf{Pay Fine Feature:} A dedicated payFine() function was added
+  because the borrow-block rule (BR-4) is otherwise irresolvable within
+  the system. This makes the application self-contained and realistic.
+\item
+  \textbf{Simplified Date Arithmetic:} Full calendar date arithmetic
+  (accounting for leap years and month lengths) was simplified to a
+  linear approximation suitable for the demonstration scope. A
+  production system would use mktime() and difftime() from.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\item
+  \textbf{Challenges encountered}
+\end{enumerate}
+
+\begin{itemize}
+\item
+  \textbf{Managing Two Interdependent Structs:} The borrow and return
+  operations must consistently update both the Book and Member structs
+  atomically. A bug that updated one but not the other would corrupt
+  availability counts. This was handled by always finding both records
+  before making any modifications.
+\item
+  \textbf{Input Buffer Flushing:} Mixing scanf() with fgets() required
+  careful buffer management. A clearBuffer() helper consuming the
+  newline after every numeric scanf call resolved all input-skipping
+  issues.
+\item
+  \textbf{Preventing Invalid Delete Operations:} Deleting a book while
+  copies are on loan would create dangling borrowedBookId references in
+  Member records. The delete function checks availableCopies ==
+  totalCopies before allowing deletion, preventing this data integrity
+  issue.
+\item
+  \textbf{Date Storage and Comparison:} Storing dates as strings
+  (DD/MM/YYYY) is human-readable but makes arithmetic harder. The
+  computeOverdueDays() helper converts the string to an approximate
+  integer for comparison. A real system would use time, t for reliable
+  date handling.
+\item
+  \textbf{Partial Fine Payments:} The assignment only states that unpaid
+  fines prevent borrowing. Adding partial payment support required
+  careful thinking about when to clear the block (only when balance
+  reaches zero) versus allowing partial payments to reduce the balance.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\item
+  \textbf{Conclusion}
+\end{enumerate}
+
+The Library Book Management System successfully fulfils every
+requirement of the TEMB 1202 Computing II Group A Evening assignment.
+The system delivers a complete, menu-driven C application that manages
+books and members through their full lifecycle from catalogue
+registration to borrowing, return, fine collection, and summary
+reporting.
+
+All five business rules are correctly enforced: unavailable books cannot
+be borrowed, an explicit unavailability message is shown when copies are
+exhausted, late returns trigger a per-day fine, members with unpaid
+fines are blocked from borrowing, and frequently borrowed
+
+books are automatically flagged as high demand.
+
+The program demonstrates proficient use of C programming concepts
+including structures, array, pointers, string manipulation, functions,
+and conditional logic --- all topics covered in the Computing II course
+unit.
+
+Potential future enhancements include file-based persistence for data
+across sessions, support for multiple simultaneous borrows per member,
+full calendar-accurate date arithmetic using, and a role-based access
+control system distinguishing librarian administrators from general
+staff.
+
+\end{document}
