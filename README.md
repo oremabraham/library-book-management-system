@@ -43,10 +43,7 @@ Execute the compiled binary file:
   ```cmd
   library.exe
   ```
-* **Linux / macOS:**
-  ```bash
-  ./library
-  ```
+
 
 ### 🔑 Demo Login Credentials
 Access to the librarian dashboard requires the following admin credentials:
