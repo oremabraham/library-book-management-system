@@ -3,7 +3,7 @@ A system to be used by a librarian to manage the library business electronically
 # TEMB 1202: Computing II — Library Book Management System
 
 ## Project Overview
-This project is a complete, menu-driven C console application designed to automate library operations, enforce business rules, and generate summary metrics. It was developed for the **Group A Evening** assignment in the Department of Biomedical and Mechatronics Engineering at **Kyambogo University**.
+This project is a complete, menu-driven C console application designed to automate library operations, enforce business rules, and generate summary metrics. It was developed for  **Group A Evening** assignment in the Department of Biomedical and Mechatronics Engineering at **Kyambogo University**.
 
 ### 🎓 Course & Submission Details
 * **Course Code:** TEMB 1202 — Computing II
