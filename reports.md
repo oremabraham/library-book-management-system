@@ -25,18 +25,11 @@ System Architecture (3 Layer Design)
 •	Business Logic Layer: Enforces library policy rules and handles fine calculations (borrowBook(), returnBook()).
 •	Data Management Layer: Handles modifications directly within fixed memory data blocks (addBook(), deleteBook()).
 Structural Data Structures
-
-
-
-
-
-
-
-
-
-
-
-
+Member of struct fields            Book struct fields
+unique member ID & Name            unique ID and ISBN
+Active borrowed book ID           Tiltle and author strings
+Due dat tracker string             Total vs available copy counters
+outstanding finance balance         Borrow count tracker
 
 Application Capabilities 
 •	Authentication: Grants access via a secure three-attempt login gateway (admin/lib2026).
