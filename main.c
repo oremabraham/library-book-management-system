@@ -1,6 +1,5 @@
 /*
-Name: Juuko Morris
-Reg NO: 25/U/BIE/01375/PE
+
 Library Book Management System
 TEMB 1202 Computing II — Group A Evening
 
